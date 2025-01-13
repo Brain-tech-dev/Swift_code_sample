@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileTableViewCell" rowHeight="295" id="KGk-i7-Jjw" customClass="ProfileTableViewCell" customModule="NiliRock1_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="295"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="295"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oet-HV-6xY">
+                        <rect key="frame" x="0.0" y="0.0" width="294" height="295"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePicker" translatesAutoresizingMaskIntoConstraints="NO" id="EpR-4Z-SQ5">
+                                <rect key="frame" x="87" y="0.0" width="120" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="AOt-KV-eb7"/>
+                                    <constraint firstAttribute="height" constant="120" id="Ie8-qG-ram"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TuW-Ln-z9Z">
+                                <rect key="frame" x="16" y="136" width="262" height="143"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGR-cI-V6u" customClass="SemiBoldLabelSize18" customModule="NiliRock1_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="262" height="67.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oJ-rY-Dnb" customClass="SemiBoldLabelSize16" customModule="NiliRock1_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75.666666666666657" width="262" height="67.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EpR-4Z-SQ5" firstAttribute="centerX" secondItem="oet-HV-6xY" secondAttribute="centerX" id="1K5-tp-AC6"/>
+                            <constraint firstItem="EpR-4Z-SQ5" firstAttribute="top" secondItem="oet-HV-6xY" secondAttribute="top" id="E8G-yT-A5m"/>
+                            <constraint firstItem="TuW-Ln-z9Z" firstAttribute="leading" secondItem="oet-HV-6xY" secondAttribute="leading" constant="16" id="NpJ-uV-1Sm"/>
+                            <constraint firstAttribute="trailing" secondItem="TuW-Ln-z9Z" secondAttribute="trailing" constant="16" id="nuv-oj-kzc"/>
+                            <constraint firstAttribute="bottom" secondItem="TuW-Ln-z9Z" secondAttribute="bottom" constant="16" id="rA6-Bt-PwR"/>
+                            <constraint firstItem="TuW-Ln-z9Z" firstAttribute="top" secondItem="EpR-4Z-SQ5" secondAttribute="bottom" constant="16" id="yV6-hM-Ao1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="oet-HV-6xY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="L0C-md-9Op"/>
+                    <constraint firstAttribute="trailing" secondItem="oet-HV-6xY" secondAttribute="trailing" id="XV9-uj-pe0"/>
+                    <constraint firstItem="oet-HV-6xY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Zex-zy-T1I"/>
+                    <constraint firstAttribute="bottom" secondItem="oet-HV-6xY" secondAttribute="bottom" id="dTV-e6-8hq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="oet-HV-6xY" id="vOy-Fa-Xzf"/>
+                <outlet property="pageTitle" destination="cGR-cI-V6u" id="Si2-Ga-Jl4"/>
+                <outlet property="profileImage" destination="EpR-4Z-SQ5" id="We8-WM-1Zp"/>
+                <outlet property="userName" destination="5oJ-rY-Dnb" id="3YY-eP-iA5"/>
+            </connections>
+            <point key="canvasLocation" x="102" y="42"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imagePicker" width="62" height="62"/>
+    </resources>
+</document>

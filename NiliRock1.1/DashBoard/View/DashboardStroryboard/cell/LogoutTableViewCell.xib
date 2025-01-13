@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogoutTableViewCell" rowHeight="88" id="KGk-i7-Jjw" customClass="LogoutTableViewCell" customModule="NiliRock1_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fch-mg-Rrg">
+                        <rect key="frame" x="0.0" y="16" width="353" height="72"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZW-iA-RcE" customClass="CustomButton" customModule="NiliRock1_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="353" height="72"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logoutAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WNi-cp-GuD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1ZW-iA-RcE" secondAttribute="trailing" id="GsI-VX-81h"/>
+                            <constraint firstItem="1ZW-iA-RcE" firstAttribute="top" secondItem="fch-mg-Rrg" secondAttribute="top" id="apf-jL-oES"/>
+                            <constraint firstItem="1ZW-iA-RcE" firstAttribute="leading" secondItem="fch-mg-Rrg" secondAttribute="leading" id="bqe-Ux-lFL"/>
+                            <constraint firstAttribute="bottom" secondItem="1ZW-iA-RcE" secondAttribute="bottom" id="szn-Dx-Uui"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fch-mg-Rrg" secondAttribute="bottom" id="7Eg-8n-Kvc"/>
+                    <constraint firstItem="fch-mg-Rrg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RmA-Xh-8gc"/>
+                    <constraint firstItem="fch-mg-Rrg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="dkd-fM-4Ja"/>
+                    <constraint firstAttribute="trailing" secondItem="fch-mg-Rrg" secondAttribute="trailing" id="yfD-Cr-1kq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="logoutButton" destination="1ZW-iA-RcE" id="1ff-jX-aph"/>
+            </connections>
+            <point key="canvasLocation" x="154.96183206106869" y="4.2253521126760569"/>
+        </tableViewCell>
+    </objects>
+</document>
